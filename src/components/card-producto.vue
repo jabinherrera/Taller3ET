@@ -1,14 +1,15 @@
 <template>
-    <div class="card mb-3" style="max-width: 540px;">
+    <div v-for="producto in products" :key="producto._id" class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
+      <img :src="producto.images[0]" class="img-fluid rounded-start" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        <h5 class="card-title">{{ producto.name }}</h5>
+        <p class="card-text">{{ producto.price }}</p>
+        <p class="card-text">{{ producto.description }}</p>
+        <p class="card-text"><small class="text-body-secondary">{{ producto.updatedAt }}</small></p>
       </div>
     </div>
   </div>
@@ -16,9 +17,29 @@
 </template>
 
 <script>
-    export default {
-        
-    }
+import { fetchData } from '../services/data-card-producto.js';
+
+export default {
+  data() {
+    return {
+      products: [],
+    };
+  },
+  mounted() {
+    this.fetchDataFromAPI();
+  },
+  methods: {
+    async fetchDataFromAPI() {
+      try {
+        const response = await fetchData();
+        this.products = response
+        console.log(response)
+      } catch (error) {
+        console.error(error);
+      }
+    },
+  },
+};
 </script>
 
 <style>

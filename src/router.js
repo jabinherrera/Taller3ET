@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 import MarketPlace from './pages/MarketPlace';
-import PerfilUsuario from './pages/PerfilUsuario';
+//import PerfilUsuario from './pages/PerfilUsuario';
 import VistaProducto from './pages/VistaProducto';
 
 const routes = [
@@ -10,11 +10,11 @@ const routes = [
     path: '/marketplace',
     component: MarketPlace
   },
-  {
+  /*{
     name: 'perfil_usuario',
     path: '/perfil_usuario',
     component: PerfilUsuario
-  },
+  },*/
   {
     name: 'vista_producto',
     path: '/vista_producto',
