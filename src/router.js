@@ -6,12 +6,6 @@ import PerfilUsuario from './pages/PerfilUsuario';
 import VistaProducto from './pages/VistaProducto';
 
 const routes = [
-
-import MarketPlace from './pages/MarketPlace';
-import PerfilUsuario from './pages/PerfilUsuario';
-import VistaProducto from './pages/VistaProducto';
-
-const routes = [
    
   {
     name: 'marketplace',
