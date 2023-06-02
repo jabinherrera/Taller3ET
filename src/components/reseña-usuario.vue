@@ -33,7 +33,6 @@ export default {
     async fetchDataFromAPI() {
       try {
         const response = await fetchData();
-        this.reviews = response.reviews
         this.users = response.user
       } catch (error) {
         console.error(error);
