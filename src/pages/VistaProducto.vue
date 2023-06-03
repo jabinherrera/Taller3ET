@@ -1,6 +1,6 @@
 <template>
     <div>
-<CardProducto/>
+<CardProducto />
 <UsuarioPerfil/>
 <ReseñaProducto/>
 

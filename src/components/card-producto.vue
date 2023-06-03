@@ -20,7 +20,9 @@
 import { fetchData } from '../services/data-card-producto.js';
 
 export default {
-  data() {
+  name : "CardProducto",
+
+data() {
     return {
       products: [],
     };

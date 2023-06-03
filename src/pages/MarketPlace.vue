@@ -5,10 +5,14 @@
 </template>
 
 <script>
+
 import CardProducto from '../components/card-producto.vue';
     export default {
-        components: { CardProducto }
-    }
+        components: { CardProducto },
+ 
+};
+
+    
 </script>
 
 <style>
