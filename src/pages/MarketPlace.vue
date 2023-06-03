@@ -1,6 +1,6 @@
 <template>
     <div>
-<CardProducto v-for="5"/>
+<CardProducto/>
     </div>
 </template>
 

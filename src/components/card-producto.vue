@@ -10,6 +10,7 @@
         <p class="card-text">{{ producto.price }}</p>
         <p class="card-text">{{ producto.description }}</p>
         <p class="card-text"><small class="text-body-secondary">{{ producto.updatedAt }}</small></p>
+        <div><router-link to="/vista_producto">Ver detalles</router-link></div>
       </div>
     </div>
   </div>

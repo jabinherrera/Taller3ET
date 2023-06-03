@@ -10,6 +10,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ review.product.name }}</h5>
           <p class="card-text">{{ review.product.description }}</p>
+          <div><router-link to="/vista_producto">Ver producto</router-link></div>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ review.user.name }}</h5>
         <p class="card-text">{{ review.review }}</p>
-       
+        <div><router-link to="/perfil_usuario">Ver perfil</router-link></div>
       </div>
     </div>
   </div>

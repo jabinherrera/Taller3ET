@@ -7,6 +7,7 @@
     <h3> {{ user.name }}</h3>
     <h2> {{ user.city }}</h2>
     <p class="card-text">{{ user.bio }}</p>
+    <div><router-link to="/perfil_usuario">Ver perfil</router-link></div>
   </div>
     </div>
 </div>
