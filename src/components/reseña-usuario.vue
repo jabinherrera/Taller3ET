@@ -23,7 +23,7 @@ import { fetchData } from '../services/data-reseña-usuario.js';
 export default {
   data() {
     return {
-      reviews: [], // Datos obtenidos de la API
+      reviews: [],
     };
   },
   mounted() {
@@ -34,7 +34,6 @@ export default {
       try {
         const response = await fetchData();
         this.reviews = response.reviews
-        this.users = response.user
       } catch (error) {
         console.error(error);
       }
